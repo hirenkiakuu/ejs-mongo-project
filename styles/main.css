@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+:root {
+    --primary: #AD9CC0;
+    --secondary: #B4869F;
+    --darky: #4E4C67;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    background: linear-gradient(to bottom, var(--secondary), var(--primary));
+    color: #fff;
+    margin: 0;
+}
+
+.logo {
+    font-size: 40px;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; */
+    width: 100%;
+    min-height: 60px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary);
+    margin-bottom: 60px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: var(--darky);
+}
+
+nav ul {
+    display: flex;
+}
+
+.articles-container {
+    margin: 0 auto;
+    max-width: 1144px;
+}
+
+article {
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+article a {
+    color: #9a67f8;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+form div label {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+input, textarea {
+    min-height: 30px;
+    border: 1px solid #000;
+    background-color: rgba(0, 0, 0, 0.4);
+    color:#fff;
+    font-size: 18px;
+    padding: 3px 5px;
+    outline: none;
+}
+
+.form-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-button input{
+    background-color: rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.stack {
+    position: absolute;
+    bottom: 0;
+    color:rgba(255, 255, 255, 0.5);
+}
+
+.welcome {
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 1144px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.welcome h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.welcome-title {
+    max-width: 60%;
+}
+
+.welcome-img {
+    font-size: 200px;
+    margin-right: 30px;
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+}
+
+.welcome-img:before {
+    content: "new Stack();";
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    left: 0px;
+    bottom: 30px;
+    white-space: nowrap;
+}
+
+.welcome-img:after {
+    content: "11010010";
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.start-button {
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    background-color: transparent;
+    transition: all 0.3s ease; 
+}
+
+.start-button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.benefits {
+    max-width: 1144px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.benefits-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.benefits-list .bx{
+    font-size: 40px;
+}
+
+.benefits-list-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.benefits h1 {
+    margin: 0 auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.form-button input:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+::-webkit-scrollbar {
+    width: 8px; /* Ширина скроллбара */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:#888; /* Цвет ползунка */
+    border-radius: 4px; /* Закругление углов ползунка */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #eee; /* Цвет трека */
+}
